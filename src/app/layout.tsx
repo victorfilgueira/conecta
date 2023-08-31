@@ -1,8 +1,12 @@
+import { Header } from '@/components/Header'
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Vollkorn } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const volkorn = Vollkorn({ 
+  subsets: ['latin'], 
+  weight: ['400', '700', '800'] 
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={volkorn.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
