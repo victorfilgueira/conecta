@@ -17,7 +17,7 @@ export function Products() {
                 </p>
             </div>
 
-            <div className="flex mx-[16rem] justify-around mt-20">
+            <div className="flex flex-col md:flex-row lg:flex-row md:mx-[5rem] lg:mx-[14rem] justify-around mt-20">
                 <Card imageSrc={bottle.src} title="Garrafa 350ml" description="Lorem ipsum dolor sit amet" />
                 <Card imageSrc={can.src} title="Garrafa 100ml" description="Lorem ipsum dolor sit amet" />
             </div>
