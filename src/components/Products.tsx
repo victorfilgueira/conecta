@@ -3,6 +3,7 @@
 import Card from "./Card";
 import bottle from "@/assets/bottle350.png";
 import can from "@/assets/can100.png"; 
+import { Grid } from "./Grid";
 
 export function Products() {
 
@@ -21,6 +22,8 @@ export function Products() {
                 <Card imageSrc={bottle.src} title="Garrafa 350ml" description="Lorem ipsum dolor sit amet" />
                 <Card imageSrc={can.src} title="Garrafa 100ml" description="Lorem ipsum dolor sit amet" />
             </div>
+
+            <Grid />
         </div>
     )
 }
