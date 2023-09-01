@@ -4,11 +4,12 @@ import Card from "./Card";
 import bottle from "@/assets/bottle350.png";
 import can from "@/assets/can100.png"; 
 import { Grid } from "./Grid";
+import { TopFooter } from "./TopFooter";
 
 export function Products() {
 
     return(
-        <div className="h-[232rem]">
+        <div className="h-[106rem]">
             <div className="mt-20 mx-12 h-22 flex flex-col items-center">
                 <h1 className="text-primary-black font-bold text-2xl">
                     Produtos
@@ -24,6 +25,7 @@ export function Products() {
             </div>
 
             <Grid />
+            <TopFooter />
         </div>
     )
 }
