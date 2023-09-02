@@ -16,7 +16,7 @@ export function Header() {
       };
 
     return(
-        <header className="bg-scroll bg-cover w-screen h-screen"
+        <header className="bg-scroll bg-cover w-full h-screen"
             style={{backgroundImage: `url(${bg.src})`}}
         >
             <div className='pt-5 min-h-[46rem]'>

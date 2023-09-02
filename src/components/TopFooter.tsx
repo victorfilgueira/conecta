@@ -21,7 +21,7 @@ export function TopFooter() {
                     </h1>
                     <GrayButton text="Aqui um CTA" onClick={handleButtonClick} />
                 </div>
-                <Image className="w-[16rem] transform rotate-[15deg] z-0" src={can.src} width={195} height={343} alt="Can Image" />
+                <Image className="w-[20rem] transform rotate-[15deg] z-0 mt-12" src={can.src} width={195} height={343} alt="Can Image" />
             </div>
             <div className="relative z-50">
                 <Footer />
