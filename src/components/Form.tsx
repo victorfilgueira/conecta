@@ -16,7 +16,7 @@ export function Form() {
     const handleButtonClick = () => {};
 
     return(
-        <form className="flex flex-col mx-auto p-4">
+        <form className="flex flex-col mx-auto p-4 md:w-[31rem]">
             <div className="mb-4">
                 <label htmlFor="name" className={`${roboto.className} mb-2 font-normal text-xs opacity-30 text-white`}>
                 NOME
@@ -29,8 +29,8 @@ export function Form() {
                 className={`${inter.className} w-full text-base opacity-50 px-3 py-2 border text-white border-white border-t-2 border-r-2 border-b-0 border-l-0 focus:border-primary-green focus:outline-none bg-primary-gray focus:bg-secondary-gray`}
                 />
             </div>
-            <div className="mb-4 flex">
-                <div className="w-40 mr-6">
+            <div className="mb-4 flex flex-col md:flex-col lg:flex-row">
+                <div className="w-full  md:w-full lg:w-40 mr-6">
                     <label htmlFor="email" className={`${roboto.className} mb-2 font-normal text-xs opacity-30 text-white`}>
                         TELEFONE
                     </label>

@@ -20,8 +20,8 @@ export function Footer() {
     return(
         <div className="bg-primary-gray h-[60rem] md:h-[68rem] lg:h-[50rem]">
            
-           <div className="flex items-center justify-between mx-[12rem] h-4/5">
-                <div>
+           <div className="flex flex-col md:flex-col lg:flex-row items-center justify-between mx-[2rem] md:mx-[2rem] lg:mx-[12rem] h-4/5">
+                <div className="mt-24 md:mt-24 lg:mt-0">
                     <h1 className="text-white text-4xl font-bold">Fale Conosco.</h1>
                     <div className='flex h-10 items-center'>
                         <Link href='#' className='mr-1 h-10 flex items-center justify-center'>
