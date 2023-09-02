@@ -1,5 +1,5 @@
 import { Roboto, Inter } from "next/font/google"
-import GreenButton from "./GreenButton";
+import GreenButtonFooter from "./GreenButtonFooter";
 
 const roboto = Roboto({
     subsets: ['latin'],
@@ -77,7 +77,7 @@ export function Form() {
                 ></textarea>
             </div>
             <div className="flex justify-end">
-                <GreenButton onClick={handleButtonClick} text={"Aqui um CTA"} />
+                <GreenButtonFooter onClick={handleButtonClick} text={"Aqui um CTA"} />
             </div>
         </form>
     )

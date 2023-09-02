@@ -38,13 +38,13 @@ export function Footer() {
                     <Form />
                 </div>
            </div>
-           <div className="flex items-center justify-between mx-[12rem] mt-[3rem]">
+           <div className="flex flex-col md:flex-row lg:flex-row items-center justify-between md:mx-[12rem] lg:mx-[12rem] mt-[3rem]">
                 <p className={`${inter.className} text-white text-xs opacity-30`}>
                     Todos os direitos reservados @ 2020 Conecta
                 </p>
                 <div className="flex items-center justify-center">
                     <p className={`${inter.className} text-white text-[9px] opacity-30`}>PROJETADO POR</p>
-                    <Image className="w-14" src={logo} alt="Conecta" />
+                    <Image className="w-16" src={logo} alt="Conecta" />
                 </div>
             </div>
         </div>
