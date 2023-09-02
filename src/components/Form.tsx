@@ -1,46 +1,83 @@
+import { Roboto, Inter } from "next/font/google"
+import GreenButton from "./GreenButton";
+
+const roboto = Roboto({
+    subsets: ['latin'],
+    weight: ['400', '700', '900'] 
+});
+
+const inter = Inter({
+    subsets: ['latin'],
+    weight: ['400', '700', '900'] 
+});
 
 export function Form() {
+
+    const handleButtonClick = () => {};
+
     return(
-        <form className="max-w-md mx-auto p-4">
+        <form className="flex flex-col mx-auto p-4">
             <div className="mb-4">
-                <label htmlFor="name" className="block mb-2 font-semibold text-gray-700">
-                Nome
+                <label htmlFor="name" className={`${roboto.className} mb-2 font-normal text-xs opacity-30 text-white`}>
+                NOME
                 </label>
                 <input
                 type="text"
+                placeholder="Insira seu Nome"
                 id="name"
                 name="name"
-                className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
+                className={`${inter.className} w-full text-base opacity-50 px-3 py-2 border text-white border-white border-t-2 border-r-2 border-b-0 border-l-0 focus:border-primary-green focus:outline-none bg-primary-gray focus:bg-secondary-gray`}
                 />
             </div>
+            <div className="mb-4 flex">
+                <div className="w-40 mr-6">
+                    <label htmlFor="email" className={`${roboto.className} mb-2 font-normal text-xs opacity-30 text-white`}>
+                        TELEFONE
+                    </label>
+                    <input
+                    type="tel"
+                    placeholder="(99) 99999-9999"
+                    id="phone"
+                    name="phone"
+                    className={`${inter.className} w-full px-3 py-2 opacity-50 border text-white border-white border-t-2 border-r-2 border-b-0 border-l-0 focus:border-primary-green focus:outline-none bg-primary-gray focus:bg-secondary-gray`}
+                    />
+                </div>
+                <div>
+                    <label htmlFor="email" className={`${roboto.className} mb-2 font-normal text-xs opacity-30 text-white`}>
+                        E-MAIL
+                    </label>
+                    <input
+                    type="email"
+                    placeholder="email@email.com.br"
+                    id="email"
+                    name="email"
+                    className={`${inter.className} w-full px-3 py-2 opacity-50 border text-white border-white border-t-2 border-r-2 border-b-0 border-l-0 focus:border-primary-green focus:outline-none bg-primary-gray focus:bg-secondary-gray`}
+                    />
+                </div>
+            </div>
             <div className="mb-4">
-                <label htmlFor="email" className="block mb-2 font-semibold text-gray-700">
-                Email
+                <label htmlFor="name" className={`${roboto.className} mb-2 font-normal text-xs opacity-30 text-white`}>
+                ASSUNTO
                 </label>
-                <input
-                type="email"
-                id="email"
-                name="email"
-                className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
+                <select
+                id="subject"
+                value="Selecione um Assunto"
+                name="subject"
+                className={`${inter.className} w-full px-3 py-2 opacity-50 border text-white border-white border-t-2 border-r-2 border-b-0 border-l-0 focus:border-primary-green focus:outline-none bg-primary-gray focus:bg-secondary-gray`}
                 />
             </div>
             <div className="mb-6">
-                <label htmlFor="message" className="block mb-2 font-semibold text-gray-700">
-                Mensagem
+                <label htmlFor="message" className={`${roboto.className} mb-2 font-normal text-xs opacity-30 text-white`}>
+                MENSAGEM
                 </label>
                 <textarea
                 id="message"
                 name="message"
-                className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
+                className={`${inter.className} w-full h-32 resize-none opacity-50 px-3 py-2 border text-white border-white border-t-2 border-r-2 border-b-0 border-l-0 focus:border-primary-green focus:outline-none bg-primary-gray focus:bg-secondary-gray`}
                 ></textarea>
             </div>
-            <div className="text-center">
-                <button
-                type="submit"
-                className="px-4 py-2 font-semibold text-white bg-blue-500 rounded hover:bg-blue-600 focus:outline-none focus:ring"
-                >
-                Enviar
-                </button>
+            <div className="flex justify-end">
+                <GreenButton onClick={handleButtonClick} text={"Aqui um CTA"} />
             </div>
         </form>
     )

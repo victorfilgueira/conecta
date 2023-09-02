@@ -3,7 +3,6 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Vollkorn } from 'next/font/google'
 import { Products } from '@/components/Products'
-import { TopFooter } from '@/components/TopFooter'
 
 const volkorn = Vollkorn({ 
   subsets: ['latin'], 
