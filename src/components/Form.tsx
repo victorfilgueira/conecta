@@ -1,5 +1,6 @@
 import { Roboto, Inter } from "next/font/google"
 import GreenButtonFooter from "./GreenButtonFooter";
+import SelectComponent from "./Select";
 
 const roboto = Roboto({
     subsets: ['latin'],
@@ -59,12 +60,13 @@ export function Form() {
                 <label htmlFor="name" className={`${roboto.className} mb-2 font-normal text-xs opacity-30 text-white`}>
                 ASSUNTO
                 </label>
-                <select
+                {/* <select
                 id="subject"
                 value="Selecione um Assunto"
                 name="subject"
                 className={`${inter.className} w-full px-3 py-2 opacity-50 border text-white border-white border-t-2 border-r-2 border-b-0 border-l-0 focus:border-primary-green focus:outline-none bg-primary-gray focus:bg-secondary-gray`}
-                />
+                /> */}
+                <SelectComponent />
             </div>
             <div className="mb-6">
                 <label htmlFor="message" className={`${roboto.className} mb-2 font-normal text-xs opacity-30 text-white`}>
