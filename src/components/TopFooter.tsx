@@ -18,7 +18,7 @@ export function TopFooter() {
 
                 <Image className="w-[12rem] z-0 -mt-32 flex md:hidden lg:hidden" src={can.src} width={195} height={343} alt="Can Image" />
                 <div className="flex flex-col items-center justify-center">
-                    <h1 className="text-black font-extrabold text-2xl">
+                    <h1 className="text-black font-extrabold text-2xl text-center">
                         Quer Experimentar?
                     </h1>
                     <GrayButton text="Comprar" onClick={handleButtonClick} />
