@@ -9,7 +9,7 @@ const inter = Inter({
 
 const SelectComponent = () => {
   const [selectedOption, setSelectedOption] = useState(''); // Estado para armazenar a opção selecionada
-  const options = ['Opção 1', 'Opção 2', 'Opção 3', 'Opção 4']; // Substitua com suas opções reais
+  const options = ['Dúvidas sobre Ingredientes e Nutrição', 'Feedback e Experiências de Consumo', 'Perguntas sobre Distribuição e Lojas Locais', 'Assuntos Relacionados à Saúde e Segurança']; // Substitua com suas opções reais
 
   const handleChange = (e: { target: { value: React.SetStateAction<string>; }; }) => {
     setSelectedOption(e.target.value);
@@ -25,7 +25,6 @@ const SelectComponent = () => {
           </option>
         ))}
       </select>
-      <p>Você selecionou: {selectedOption}</p>
     </div>
   );
 };

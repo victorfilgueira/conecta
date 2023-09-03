@@ -20,7 +20,7 @@ const Card = ({ imageSrc, title, description }: CardProps) => {
                 <p>{description}</p>
             </div>
             <div className="mt-[-1.25rem]">
-                <GreenButton text="Aqui um CTA" onClick={handleButtonClick} />
+                <GreenButton text="Comprar" onClick={handleButtonClick} />
             </div>
         </div>
     );

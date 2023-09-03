@@ -21,7 +21,7 @@ export function TopFooter() {
                     <h1 className="text-black font-extrabold text-2xl">
                         Quer Experimentar?
                     </h1>
-                    <GrayButton text="Aqui um CTA" onClick={handleButtonClick} />
+                    <GrayButton text="Comprar" onClick={handleButtonClick} />
                 </div>
                 <Image className="w-[20rem] transform rotate-[15deg] z-0 mt-12 hidden md:flex lg:flex" src={can.src} width={195} height={343} alt="Can Image" />
             </div>

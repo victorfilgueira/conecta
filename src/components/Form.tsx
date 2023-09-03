@@ -79,7 +79,7 @@ export function Form() {
                 ></textarea>
             </div>
             <div className="flex justify-end">
-                <GreenButtonFooter onClick={handleButtonClick} text={"Aqui um CTA"} />
+                <GreenButtonFooter onClick={handleButtonClick} text={"Enviar"} />
             </div>
         </form>
     )

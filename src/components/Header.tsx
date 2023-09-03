@@ -35,9 +35,9 @@ export function Header() {
                 <div className='flex flex-col-reverse md:flex-row lg:flex-row justify-between items-center ml-[12vw] mr-[12vw]  min-h-[35rem]'>
                     <div className='flex flex-col items-center md:items-start lg:items-start md:ml-4 lg:ml-4'>
                         <h1 className='h-36 w-18 text-white text-[3rem] leading-tight whitespace-nowrap'>
-                            Aqui um título<br/>de duas linhas
+                            CONECTA<br/>Energy Drink
                         </h1>
-                        <GreenButton text='Aqui um CTA' onClick={handleButtonClick}/>
+                        <GreenButton text='Ver mais' onClick={handleButtonClick}/>
                     </div>
                     <Image className='mt-18 md:mt-0 lg:mt-0 md:mr-10 lg:mr-32 w-[20vw] min-w-[13.25rem]' src={can} alt='Can Image'/>
                 </div>
