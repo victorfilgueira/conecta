@@ -12,7 +12,6 @@ import GreenButton from './GreenButton';
 export function Header() {
 
     const handleButtonClick = () => {
-        console.log("Botão clicado!");
       };
 
     return(
